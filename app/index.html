@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KAIF upgrade</title>
+    <title>KAIF upgrade</title>    
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <header class="header">        
+    <header class="header" style="background-image: url(img/header__bg.png);">        
         <div class="container">
-            <img class="header__img-bg" src="img/header__bg.png" alt="">
+            <!-- <img class="header__img-bg" src="img/header__bg.png" alt=""> -->
             <div class="header__inner">
                 <div class="header__left">
                     <p class="header__slogan">friendly specialty place</p>
-                    <p class="header__name"><span>kaif</span> upgrade</p>
+                    <p class="header__name"><span class="header__name-title">kaif</span> upgrade</p>
                     <p class="header__advances">У нас потужна вентиляційна система
                         і одяг зовсім не пахне</p>
                     <a href="" class="header__booking">замовити столик</a>
@@ -36,17 +38,17 @@
                 <div class="gallery__photos">
                     <div class="gallery__top">
                         <div class="gallery__top-left">
-                            <img class="gallery__top-left-img" src="" alt="">
+                            <img class="gallery__top-left-img" src="img/gallery-1.png" alt="">
                         </div>                        
                         <div class="gallery__top-center">
-                            <img class="gallery__top-center-img" src="" alt="">
+                            <img class="gallery__top-center-img" src="img/gallery-2.png" alt="">
                         </div>                        
                         <div class="gallery__top-right">
                             <div class="gallery__top-right-top">
-                                <img class="gallery__top-right-top-img" src="" alt="">
+                                <img class="gallery__top-right-top-img" src="img/gallery-3.png" alt="">
                             </div>
                             <div class="gallery__top-right-bottom">
-                                <img class="gallery__top-right-bottom-img" src="" alt="">
+                                <img class="gallery__top-right-bottom-img" src="img/gallery-4.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -69,31 +71,33 @@
     <section class="menu">
         <div class="container">
             <div class="menu__inner">
-                <div class="menu__banner">
-                    <div class="menu__vertical">
-                        <p class="menu__vertical-text">
-                            menu menu menu menu menu 
-                        </p>
-                    </div>
-                    <div class="menu__main">
-                        <div class="menu__left">
-                            <img class="menu__left-img" src="img/menu-img.png" alt="">
+                <a class="menu__link" href="menu.html">
+                    <div class="menu__banner">
+                        <div class="menu__vertical">
+                            <p class="menu__vertical-text">
+                                menu menu menu menu menu 
+                            </p>
                         </div>
-                        <div class="menu__right">
-                            <div class="menu__right-top">
-                                <p class="menu__right-top-text">
-                                    Багато з тих, хто говорив, що немає нічого такого міцного, що вони не 
-                                    могли б викурити - були змушені визнати себе переможеними і просили помилування
-                                </p>
+                        <div class="menu__main">
+                            <div class="menu__left">
+                                <img class="menu__left-img" src="img/menu-img.png" alt="">
                             </div>
-                            <div class="menu__right-bottom">
-                                <p class="menu__right-bottom-text">
-                                    — The Champagne of Tobaccos, A Research Paper by Neal T. M. Poke, December 19, 1955.
-                                </p>
+                            <div class="menu__right">
+                                <div class="menu__right-top">
+                                    <p class="menu__right-top-text">
+                                        Багато з тих, хто говорив, що немає нічого такого міцного, що вони не 
+                                        могли б викурити - були змушені визнати себе переможеними і просили помилування
+                                    </p>
+                                </div>
+                                <div class="menu__right-bottom">
+                                    <p class="menu__right-bottom-text">
+                                        — The Champagne of Tobaccos, A Research Paper by Neal T. M. Poke, December 19, 1955.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -161,9 +165,9 @@
                 <div class="footer__top">
                     <img class="footer__logo" src="img/logo-hand.svg" alt="">
                     <div class="footer__text">
-                        <a class="footer__link" href="">Про нас</a>
-                        <a class="footer__link" href="">Блог</a>
-                        <a class="footer__link" href="">Правила</a>
+                        <a class="footer__link" href="about.html">Про нас</a>
+                        <a class="footer__link" href="blog.html">Блог</a>
+                        <a class="footer__link" href="rules.html">Правила</a>
                     </div>
                     <div class="footer__socials socials">
                         <a href="#" class="header__instagram"><img class="header__instagram-icon" src="img/instagram.svg" alt=""></a>

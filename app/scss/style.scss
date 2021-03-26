@@ -11,7 +11,7 @@ a {
     color: #fff;
 }
 body {
-    font-family: 'Assistant', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #fff;
     background-color: #020205;
@@ -22,6 +22,10 @@ body {
     margin: 0 auto;
 } 
 
+@font-face {
+    font-family: "Ustroke";
+    src: url('../fonts/ustroke.ttf');
+}
 // @font-face {
 //     font-family: 'Font Name';
 //     src: local('Font Name'),
@@ -29,9 +33,81 @@ body {
 //          url('/fonts/font.woff') format('woff'),
 //          url('/fonts/font.ttf') format('ttf'),
 //          url('/fonts/font.eot') format('eot');
-// }
-
+//   }
 // #######HEADER#########
+.header {
+    &__inner {
+        margin: 0 auto;
+        max-width: 1150px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background: none;
+    }
+    &__left {
+        max-width: 467px;
+        background-color: #020205;
+    }
+    &__slogan {
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-bottom: 37px;
+        margin-top: 105px;
+    }
+    &__name {
+        font-family: Ustroke;
+        font-size: 60px;
+        margin-top: 0;
+        margin-bottom: 36px;
+    }
+    &__name-title {
+        font-family: Ustroke;
+        font-size: 120px;
+        line-height: 120px;
+        margin-top: 0;
+        margin-bottom: 34px;        
+    }
+    &__advances {
+        font-family: Montserrat;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 0;
+        margin-bottom: 34px;
+    }
+    &__booking {
+        display: inline-block;
+        width: 214px;
+        height: 54px;
+        border: 1px solid #fff;
+        font-family: Ustroke;
+        font-size: 14px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 67px;
+    }
+    &__socials {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; 
+        margin-bottom: 100px;
+        height: 24px;
+    }
+    &__instagram {}
+    &__instagram-icon {}
+    &__telegram {
+        margin: 0 35px;
+    }
+    &__telegram-icon {}
+    &__facebook {}
+    &__facebook-icon {}
+}
+.socials {
+    
+    
+}
 
 // #######GALLERY########
 
