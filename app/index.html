@@ -7,7 +7,7 @@
     <title>KAIF upgrade</title>    
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -54,13 +54,15 @@
                     </div>
                     <div class="gallery__bottom">
                         <div class="gallery__bottom-left">
-                            <img class="gallery__bottom-left-img" src="" alt="">
+                            <img class="gallery__bottom-left-img" src="img/gallery-5.png" alt="">
                         </div>
                         <div class="gallery__bottom-right">
-                            <a href="#" class="gallery__instagram"><img class="gallery__instagram-icon" src="img/instagram.svg" alt=""></a>
-                            <p class="gallery__instagram-link">більше фото у нашому інстаграмі</p>
-                            <p class="gallery__instagram-nickname">@kaif_upgrade</p>
-                            <p class="gallery__instagram-tag">#кайфуювкайфі</p>
+                            <div class="gallery__bottom-right-wrap">
+                                <a class="gallery__instagram" href="#"><img class="gallery__instagram-icon" src="img/instagram.svg" alt=""></a>
+                                <p class="gallery__instagram-more">більше фото у нашому інстаграмі</p>
+                                <a class="gallery__instagram-nickname" href="#">@kaif_upgrade</a>
+                                <p class="gallery__instagram-tag">#кайфуювкайфі</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -74,9 +76,7 @@
                 <a class="menu__link" href="menu.html">
                     <div class="menu__banner">
                         <div class="menu__vertical">
-                            <p class="menu__vertical-text">
-                                menu menu menu menu menu 
-                            </p>
+                            <p class="menu__vertical-text">menu menu menu menu menu</p>
                         </div>
                         <div class="menu__main">
                             <div class="menu__left">
@@ -107,7 +107,12 @@
             <div class="blog__inner">
                 <h2 class="blog__title">блог</h2>
                 <div class="blog__articles">
-                    <div class="blog__left"></div>
+                    <div class="blog__left">
+                        <p class="blog__article-date"></p>
+                        <p class="blog__article-title"></p>
+                        <p class="blog__article-text"></p>
+                        <p class="blog__article-more"></p>
+                    </div>
                     <div class="blog__right">
                         <div class="blog__right-top"></div>
                         <div class="blog__right-bottom"></div>

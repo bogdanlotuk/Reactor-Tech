@@ -36,13 +36,13 @@ body {
 //   }
 // #######HEADER#########
 .header {
+    margin-bottom: 90px;
     &__inner {
         margin: 0 auto;
         max-width: 1150px;
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        background: none;
     }
     &__left {
         max-width: 467px;
@@ -105,13 +105,143 @@ body {
     &__facebook-icon {}
 }
 .socials {
-    
-    
 }
 
 // #######GALLERY########
+.gallery {
+    margin-bottom: 110px;
+    &__inner {
+        margin: 0 auto;
+        max-width: 1150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title {   
+        width: 100%;     
+        margin-top: 0;        
+        font-family: Ustroke;
+        font-size: 60px;
+        line-height: 60px;
+        text-align: right;
+    }
+    &__photos {
+        display: flex;
+        flex-direction: column;
+    }
+    &__top {
+        display: flex;     
+        max-height: 446px;
+    }
+    &__top-left {
+    }
+    &__top-left-img {
+        width: 100%;
+        height: auto;
+    }
+    &__top-center {
+
+    }
+    &__top-center-img {
+        width: 100%;
+        height: auto;
+    }
+    &__top-right {
+
+    }
+    &__top-right-top {
+        max-height: 223px;
+    }
+    &__top-right-top-img {
+        width: 100%;
+        height: auto;
+    }
+    &__top-right-bottom {
+        max-height: 223px;
+    }
+    &__top-right-bottom-img {
+        width: 100%;
+        height: auto;
+    }
+    &__bottom {
+        display: flex;
+    }
+    &__bottom-left {
+        width: 100%;
+    }
+    &__bottom-left-img {
+        width: 100%;
+        height: auto;
+    }
+    &__bottom-right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    &__bottom-right-wrap{
+        max-width: 381px;
+        max-height: 179px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: space-between;
+    }
+    &__instagram {}
+    &__instagram-icon {}
+    &__instagram-more {
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        margin: 32px 0;
+    }
+    &__instagram-nickname {
+        line-height: 20px;
+        text-decoration-line: underline;
+        margin-bottom: 32px;
+    }
+    &__instagram-tag {
+        font-size: 14px;
+        line-height: 17px;
+        margin: 0;
+    }
+}
+
 
 // #######MENU###########
+.menu {
+    margin-bottom: 110px;
+    &__inner {
+        margin: 0 auto;
+        max-width: 1150px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &__banner {
+        display: flex;
+    }
+    &__vertical {
+        max-width: 45px;
+    }
+    &__vertical-text {
+        text-orientation: sideways;
+        
+    }
+    &__main {
+        max-width: 955px;
+        display: flex;
+        border: 5px solid #fff;
+    }
+    &__left {}
+    &__left-img {}
+    &__right {}
+    &__right-top {}
+    &__right-top-text {}
+    &__right-bottom {}
+    &__right-bottom-text {}
+}
 
 // #######BLOG###########
 
