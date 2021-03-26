@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit; 
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+body {
+    font-family: 'Assistant', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: #020205;
+}
+.container {
+    max-width: 1470px; 
+    padding: 0 15px;
+    margin: 0 auto;
+} 
+
+// @font-face {
+//     font-family: 'Font Name';
+//     src: local('Font Name'),
+//          url('/fonts/font.woff2') format('woff2'), 
+//          url('/fonts/font.woff') format('woff'),
+//          url('/fonts/font.ttf') format('ttf'),
+//          url('/fonts/font.eot') format('eot');
+// }
+
+// #######HEADER#########
+
+// #######GALLERY########
+
+// #######MENU###########
+
+// #######BLOG###########
+
+// #######BOOKING########
+
+// #######ABOUT##########
+
+// #######FOOTER#########
+
