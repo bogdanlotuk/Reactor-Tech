@@ -244,6 +244,50 @@ body {
 }
 
 // #######BLOG###########
+.blog {
+    &__inner {
+        margin: 0 auto;
+        max-width: 1150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title {}
+    &__articles {
+        display: flex;
+        gap: 24px;
+        margin-bottom: 50px;
+    }
+    &__left {
+        width: 100%;
+        display: flex;
+    }
+    &__article-date {}
+    &__article-title {}
+    &__article-text {}
+    &__article-more {}
+    &__right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    &__right-top {}
+    &__right-bottom {}
+    &__link {
+        display: inline-block;
+        width: 214px;
+        height: 54px;
+        border: 1px solid #fff;        
+        font-size: 14px;
+        font-weight: 800;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
 // #######BOOKING########
 
