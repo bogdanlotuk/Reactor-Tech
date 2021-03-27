@@ -97,9 +97,7 @@ body {
     }
     &__instagram {}
     &__instagram-icon {}
-    &__telegram {
-        // margin: 0 35px;
-    }
+    &__telegram {}
     &__telegram-icon {}
     &__facebook {}
     &__facebook-icon {}
@@ -859,6 +857,136 @@ body {
     &__img-1 {}
     &__img-2 {}
     &__img-3 {}
+}
+
+// page--RULES--
+.rules-header {
+    &__inner {
+        margin: 27px auto 82px;
+        max-width: 1150px;
+        display: flex; 
+        justify-content: flex-end;
+        position: relative;
+    }
+    &__img {        
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        width: 100px;
+    }
+    &__socials {
+        height: 94px;
+    }
+}
+
+.rules-name {
+    margin-bottom: 50px;
+    &__inner {
+        margin: 0 auto;
+        max-width: 1150px;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        font-family: Ustroke;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 48px;
+        margin: 0;
+    }
+}
+
+.rules-friends {
+    margin-bottom: 100px;
+    &__inner {
+        margin: 0 auto;
+        max-width: 1150px;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        gap: 107px;
+    }
+    &__left {}
+    &__left-text {
+        max-width: 269px;
+        font-weight: 500;
+        font-size: 38px;
+        line-height: 46px;
+        margin: 0;
+    }
+    &__left-text-big {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__right {}
+    &__right-text {
+        max-width: 769px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        margin: 0;
+        position: relative;
+        padding: 17px 56px;
+    }
+    &__right-text::before {
+        position: absolute;
+        content: url(../img/rules-quote-left.svg);
+        left: 0;
+        top: 0;
+        width: 36px;
+        height: 31px;
+    }
+    &__right-text::after {
+        position: absolute;
+        content: url(../img/rules-quote-right.svg);
+        right: 0;
+        bottom: 0;
+        width: 36px;
+        height: 31px;
+    }
+}
+
+.rules-main {
+    margin-bottom: 90px;
+    &__inner {
+        margin: 0 auto;
+        max-width: 1150px;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &__general{
+        display: flex;
+        gap: 24px;
+        margin-bottom: 40px;
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    &__left-text {
+        max-width: 563px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &__right {
+        display: flex;
+        flex-direction: column;
+    }
+    &__right-text {
+        max-width: 563px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &__kaif {}
 }
 
 
