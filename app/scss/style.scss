@@ -37,14 +37,15 @@ body {
 // #######HEADER#########
 .header {
     margin-bottom: 90px;
-    background-position: right bottom;
-    background-repeat: no-repeat;
+    
     &__inner {
         margin: 0 auto;
         max-width: 1150px;
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        background-position: right bottom;
+        background-repeat: no-repeat;
     }
     &__left {
         max-width: 362px;
@@ -806,6 +807,59 @@ body {
     }
 }
 
+// page--MENU--
+.menu-header {
+    &__inner {
+        margin: 27px auto 82px;
+        max-width: 1150px;
+        display: flex; 
+        justify-content: flex-end;
+        position: relative;
+    }
+    &__img {        
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        width: 100px;
+    }
+    &__socials {
+        height: 94px;
+    }
+}
+
+.menu-name {
+    margin-bottom: 50px;
+    &__inner {
+        margin: 0 auto;
+        max-width: 1150px;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        font-family: Ustroke;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 48px;
+        margin: 0;
+    }
+}
+
+.menu-full {
+    margin-bottom: 175px;
+    &__inner {
+        margin: 0 auto;
+        max-width: 1150px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+    }
+    &__img-1 {}
+    &__img-2 {}
+    &__img-3 {}
+}
 
 
 
