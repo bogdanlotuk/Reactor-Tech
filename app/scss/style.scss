@@ -47,7 +47,7 @@ body {
         justify-content: flex-start;
     }
     &__left {
-        max-width: 467px;
+        max-width: 362px;
         background-color: #020205;
     }
     &__slogan {
@@ -70,12 +70,13 @@ body {
         margin-bottom: 34px;        
     }
     &__advances {
-        font-family: Montserrat;
         text-transform: uppercase;
+        font-weight: 400;
         font-size: 14px;
         line-height: 17px;
         margin-top: 0;
         margin-bottom: 34px;
+        max-width: 330px;
     }
     &__booking {
         display: inline-block;
@@ -90,12 +91,7 @@ body {
         justify-content: center;
         margin-bottom: 67px;
     }
-    &__socials {
-        width: 142px;
-        height: 24px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center; 
+    &__socials {        
         margin-bottom: 100px;
     }
     &__instagram {}
@@ -108,6 +104,11 @@ body {
     &__facebook-icon {}
 }
 .socials {
+    width: 142px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
 }
 
 // #######GALLERY########
@@ -589,5 +590,223 @@ body {
         font-weight: 400;
     }
 }
+
+// page--ABOUT--
+.about-header{
+    &__inner {
+        margin: 27px auto 82px;
+        max-width: 1150px;
+        display: flex; 
+        justify-content: flex-end;
+        position: relative;
+    }
+    &__img {        
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        width: 100px;
+    }
+    &__socials {
+        height: 94px;
+    }
+}
+
+.about-us {
+    &__inner {
+        margin: 0 auto;
+        max-width: 1150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        margin-bottom: 86px;
+    }
+    &__title {
+        font-family: Ustroke;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 48px;
+    }
+    &__bottom {
+        display: flex;
+        gap: 21px;
+    }
+    &__bottom-left {
+        max-width: 446px;
+        min-width: 295px;
+    }
+    &__bottom-img {
+        width: 100%;
+        height: auto;
+    }
+    &__bottom-right {
+        max-width: 680px;
+    }
+    &__bottom-text {
+        max-width: 680px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+.about-reviews {
+    margin-bottom: 53px;
+    &__inner {
+        margin: 0 auto;
+        max-width: 1150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+    }
+    &__item {
+        display: flex;
+        gap: 86px;
+    }
+    &__item:nth-child(even) {
+        flex-direction: row-reverse;
+
+    }
+    &__img {}
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    &__text-name {
+        font-family: Ustroke;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 36px;
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
+    &__text-response {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        margin: 0;
+    }
+}
+
+// page--BLOG--
+.blog-header {
+    &__inner {
+        margin: 27px auto 82px;
+        max-width: 1150px;
+        display: flex; 
+        justify-content: flex-end;
+        position: relative;
+    }
+    &__img {        
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        width: 100px;
+    }
+    &__socials {
+        height: 94px;
+    }
+}
+
+.blog-name {
+    margin-bottom: 50px;
+    &__inner {
+        margin: 0 auto;
+        max-width: 1150px;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        font-family: Ustroke;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 48px;
+        margin: 0;
+    }
+}
+
+.blog-articles {
+    &__inner {
+        margin: 0 auto;
+        max-width: 1150px;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        gap: 23px;
+        margin-bottom: 80px;
+    }
+    &__item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    &__item:nth-child(5) {
+        margin-bottom: 61px;
+    }
+
+    &__img {
+        max-width: 560px;
+        min-width: 317px;
+    }
+    &__text {
+        max-width: 563px;
+        height: 313px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+    }
+    &__text-date {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #BBBBBB;
+        margin: 0;
+    }
+    &__text-title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 27px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    &__text-story {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0;
+    }
+    &__text-details {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-decoration-line: underline;
+    }
+    &__more {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-decoration-line: underline;
+        margin-bottom: 99px;
+    }
+}
+
+
+
 
 
