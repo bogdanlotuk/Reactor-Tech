@@ -709,6 +709,7 @@ body {
         left: 0;
         right: 0;
         width: 100px;
+        border-radius: 50%;
     }
     &__socials {
         height: 94px;
@@ -987,6 +988,42 @@ body {
         line-height: 22px;
     }
     &__kaif {}
+}
+
+.rules-main {
+    &__table {
+        border: 5px solid #fff;
+        max-width: 563px;
+        border-collapse: collapse;
+        
+    }
+    &__table-head {
+        
+        border-bottom: 5px solid #fff;
+    }
+    &__table-head-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 30px 36px;
+    }
+    &__table-text-title {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 27px;
+        padding: 29px 0 29px 36px;
+    }
+    &__table-text-big {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 37px;        
+    }
+    &__table-text {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 0 10px 22px 36px;
+    }
 }
 
 
