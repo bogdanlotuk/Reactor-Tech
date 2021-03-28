@@ -620,7 +620,7 @@ body {
 
 
 // page--ABOUT--
-.about-header{
+.about-header {
     &__inner {
         margin: 27px auto 82px;
         max-width: 1150px;
@@ -634,10 +634,28 @@ body {
         margin-right: auto;
         left: 0;
         right: 0;
-        width: 100px;
+        width: 100px;        
     }
     &__socials {
         height: 94px;
+    }
+}
+
+.about-name {
+    margin-bottom: 50px;
+    &__inner {
+        margin: 0 auto;
+        max-width: 1150px;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+    &__title {
+        font-family: Ustroke;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 48px;
+        margin: 0;
     }
 }
 
@@ -646,33 +664,23 @@ body {
         margin: 0 auto;
         max-width: 1150px;
         display: flex;
-        flex-direction: column;
-        align-items: center; 
+        align-items: flex-start; 
         justify-content: center;
         margin-bottom: 86px;
-    }
-    &__title {
-        font-family: Ustroke;
-        font-weight: 400;
-        font-size: 48px;
-        line-height: 48px;
-    }
-    &__bottom {
-        display: flex;
         gap: 21px;
     }
-    &__bottom-left {
+    &__left {
         max-width: 446px;
         min-width: 295px;
     }
-    &__bottom-img {
+    &__img {
         width: 100%;
         height: auto;
     }
-    &__bottom-right {
+    &__right {
         max-width: 680px;
     }
-    &__bottom-text {
+    &__right-text {
         max-width: 680px;
         font-weight: 400;
         font-size: 18px;
@@ -698,7 +706,10 @@ body {
         flex-direction: row-reverse;
 
     }
-    &__img {}
+    &__img {
+        max-width: 234px;
+        max-height: 234px;
+    }
     &__text {
         display: flex;
         flex-direction: column;
@@ -721,6 +732,104 @@ body {
         margin: 0;
     }
 }
+// MEDIA --page--ABOUT--
+@media (max-width: 800px) {
+    .about-us {
+        &__inner {
+            flex-direction: column;
+            align-items: center; 
+        }
+    }
+    .about-reviews {
+        &__item {
+
+            gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .about-header {
+        &__inner {
+            margin: 27px auto 82px;
+            max-width: 1150px;
+            display: flex; 
+            justify-content: flex-end;
+            position: relative;
+        }
+        &__img {        
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            width: 54px;
+        }
+        &__socials {
+            display: none;
+        }
+    }
+    .about-name {
+        margin-bottom: 50px;
+        &__inner {
+            margin: 0 auto;
+            max-width: 1150px;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+        }
+        &__title {
+            font-family: Ustroke;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 36px;
+            margin: 0;
+        }
+    }
+    .about-us {
+        &__inner {
+            margin-bottom: 30px;
+        }
+        &__right-text {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    .about-reviews {
+        &__item {
+            display: block;
+            margin-bottom: 30px;
+        }
+        &__img {
+            float: left;
+            max-width: 122px;
+            max-height: 122px;
+            margin: 15px;
+        }
+        &__text {
+            margin-left: 20px;
+            display: inline;
+            
+        }
+        &__item:nth-child(even) {
+            img {
+                float: right;
+            }
+        }
+        &__text-name {
+            font-size: 24px;
+            line-height: 24px;
+            margin-bottom: 18px;
+        }
+        &__text-response {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+    }
+}
+
 
 // page--BLOG--
 .blog-header {
@@ -738,7 +847,6 @@ body {
         left: 0;
         right: 0;
         width: 100px;
-        border-radius: 50%;
     }
     &__socials {
         height: 94px;
