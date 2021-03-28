@@ -44,12 +44,16 @@ body {
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        background-position: right bottom;
+        background-position: right;
         background-repeat: no-repeat;
+        height: 100vh;
     }
     &__left {
         max-width: 362px;
         background-color: #020205;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
     }
     &__slogan {
         font-size: 18px;
@@ -589,6 +593,31 @@ body {
         font-weight: 400;
     }
 }
+// MEDIA -- MAIN PAGE--
+@media (max-width: 640px) {
+    
+    
+    .footer {        
+        &__top {
+            flex-direction: column-reverse;
+            gap: 19px;
+            margin-top: 9px;
+            margin-bottom: 19px;
+        }
+        &__text {
+            margin-left: 0;
+        }
+        &__socials {
+            display: none;    
+        }
+        &__bottom {
+            margin-bottom: 8px;
+            
+        }
+    }
+}
+
+
 
 // page--ABOUT--
 .about-header{
@@ -763,7 +792,7 @@ body {
     }
     &__text {
         max-width: 563px;
-        height: 313px;
+        min-height: 313px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -803,6 +832,85 @@ body {
         line-height: 24px;
         text-decoration-line: underline;
         margin-bottom: 99px;
+    }
+}
+// MEDIA --page--BLOG--
+@media (max-width: 800px) {
+    .blog-articles {
+        &__item {
+            display: flex; 
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 23px;
+            margin-bottom: 80px;
+        }
+        &__item:nth-child(even) {
+            flex-direction: column;
+        }
+        &__img {
+            width: 317px;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .blog-header {
+        &__inner {
+            margin: 27px auto 82px;
+            max-width: 1150px;
+            display: flex; 
+            justify-content: flex-end;
+            position: relative;
+        }
+        &__img {        
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            width: 54px;
+        }
+        &__socials {
+            display: none;
+        }
+    }
+
+    .blog-name {
+        margin-bottom: 50px;
+        &__inner {
+            margin: 0 auto;
+            max-width: 1150px;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+        }
+        &__title {
+            font-family: Ustroke;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 36px;
+            margin: 0;
+        }
+    }
+    .blog-articles {
+        &__more {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-articles {
+        &__text-date{
+            margin-bottom: 23px;
+        }
+        &__text-title{
+            margin-bottom: 23px;
+        }
+        &__text-story{
+            margin-bottom: 23px;
+        }
     }
 }
 
@@ -855,9 +963,51 @@ body {
         flex-direction: column; 
         justify-content: center;
     }
-    &__img-1 {}
-    &__img-2 {}
-    &__img-3 {}
+}
+// MEDIA --page--MENU--
+@media (max-width: 640px) {
+    .menu-header {
+        &__inner {
+            margin: 27px auto 82px;
+            max-width: 1150px;
+            display: flex; 
+            justify-content: flex-end;
+            position: relative;
+        }
+        &__img {        
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            width: 54px;
+        }
+        &__socials {
+            display: none;
+        }
+    }
+
+    .menu-name {
+        margin-bottom: 50px;
+        &__inner {
+            margin: 0 auto;
+            max-width: 1150px;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+        }
+        &__title {
+            font-family: Ustroke;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 36px;
+            margin: 0;
+        }
+    }
+
+    .menu-full {
+        margin-bottom: 68px;
+    }
 }
 
 // page--RULES--
